@@ -1,0 +1,243 @@
+{
+  "projectType": "framework",
+  "projectName": "DSPy",
+  "projectDescription": "DSPy is a declarative Python framework for programming—rather than prompting—language models, enabling modular AI system construction with automated prompt and weight optimization.",
+  "theme": "palm",
+  "primaryColor": "#ec3d34",
+  "lightColor": null,
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Learn",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "learn/signatures",
+              "learn/modules",
+              "learn/language-models",
+              "learn/adapters",
+              "learn/tools",
+              "learn/assertions"
+            ]
+          },
+          {
+            "group": "Optimization",
+            "pages": [
+              "learn/optimization-overview",
+              "learn/optimizers"
+            ]
+          },
+          {
+            "group": "Evaluation",
+            "pages": [
+              "learn/evaluation-overview",
+              "learn/metrics"
+            ]
+          },
+          {
+            "group": "Production",
+            "pages": [
+              "learn/caching",
+              "learn/streaming",
+              "learn/async",
+              "learn/saving-loading",
+              "learn/deployment"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tutorials",
+        "groups": [
+          {
+            "group": "Building Programs",
+            "pages": [
+              "tutorials/rag",
+              "tutorials/classification",
+              "tutorials/entity-extraction",
+              "tutorials/math",
+              "tutorials/multihop-search"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "tutorials/react-agent",
+              "tutorials/tool-use",
+              "tutorials/mcp",
+              "tutorials/customer-service-agent"
+            ]
+          },
+          {
+            "group": "Optimization",
+            "pages": [
+              "tutorials/optimize-program",
+              "tutorials/classification-finetuning",
+              "tutorials/gepa-program"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "tutorials/streaming",
+              "tutorials/observability",
+              "tutorials/custom-module",
+              "tutorials/program-of-thought"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Signatures",
+            "pages": [
+              "api/signatures/signature",
+              "api/signatures/input-field",
+              "api/signatures/output-field"
+            ]
+          },
+          {
+            "group": "Modules",
+            "pages": [
+              "api/modules/module",
+              "api/modules/predict",
+              "api/modules/chain-of-thought",
+              "api/modules/react",
+              "api/modules/program-of-thought",
+              "api/modules/best-of-n",
+              "api/modules/refine",
+              "api/modules/parallel",
+              "api/modules/multi-chain-comparison",
+              "api/modules/code-act"
+            ]
+          },
+          {
+            "group": "Optimizers",
+            "pages": [
+              "api/optimizers/overview",
+              "api/optimizers/mipro-v2",
+              "api/optimizers/gepa",
+              "api/optimizers/bootstrap-few-shot",
+              "api/optimizers/bootstrap-few-shot-random-search",
+              "api/optimizers/bootstrap-finetune",
+              "api/optimizers/copro",
+              "api/optimizers/simba",
+              "api/optimizers/ensemble",
+              "api/optimizers/knn-few-shot",
+              "api/optimizers/better-together"
+            ]
+          },
+          {
+            "group": "Language Models",
+            "pages": [
+              "api/models/lm",
+              "api/models/embedder"
+            ]
+          },
+          {
+            "group": "Adapters",
+            "pages": [
+              "api/adapters/adapter",
+              "api/adapters/chat-adapter",
+              "api/adapters/json-adapter",
+              "api/adapters/two-step-adapter"
+            ]
+          },
+          {
+            "group": "Primitives",
+            "pages": [
+              "api/primitives/prediction",
+              "api/primitives/example",
+              "api/primitives/image",
+              "api/primitives/audio",
+              "api/primitives/history",
+              "api/primitives/tool",
+              "api/primitives/code"
+            ]
+          },
+          {
+            "group": "Evaluation",
+            "pages": [
+              "api/evaluation/evaluate",
+              "api/evaluation/semantic-f1",
+              "api/evaluation/answer-exact-match",
+              "api/evaluation/answer-passage-match",
+              "api/evaluation/complete-and-grounded"
+            ]
+          },
+          {
+            "group": "Tools & Retrievers",
+            "pages": [
+              "api/tools/colbertv2",
+              "api/tools/embeddings",
+              "api/tools/python-interpreter"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Declarative signatures to define LM input/output behavior without prompt engineering",
+    "Composable modules (Predict, ChainOfThought, ReAct, ProgramOfThought) for building AI pipelines",
+    "Automatic prompt optimization with MIPROv2, GEPA, BootstrapFewShot, and other optimizers",
+    "Weight fine-tuning via BootstrapFinetune for LM adaptation",
+    "Multi-LM provider support via LiteLLM (OpenAI, Anthropic, Gemini, local models, and more)",
+    "Streaming, async, and caching support for production deployments",
+    "Built-in evaluation framework with metrics like SemanticF1",
+    "MCP (Model Context Protocol) tool integration",
+    "Modular agent architectures with ReAct and tool use"
+  ],
+  "publicApiSurface": [
+    "dspy.Signature",
+    "dspy.InputField",
+    "dspy.OutputField",
+    "dspy.Predict",
+    "dspy.ChainOfThought",
+    "dspy.ReAct",
+    "dspy.ProgramOfThought",
+    "dspy.BestOfN",
+    "dspy.Refine",
+    "dspy.Parallel",
+    "dspy.Module",
+    "dspy.LM",
+    "dspy.Embedder",
+    "dspy.configure",
+    "dspy.context",
+    "dspy.MIPROv2",
+    "dspy.GEPA",
+    "dspy.BootstrapFewShot",
+    "dspy.BootstrapFewShotWithRandomSearch",
+    "dspy.BootstrapFinetune",
+    "dspy.COPRO",
+    "dspy.SIMBA",
+    "dspy.BetterTogether",
+    "dspy.Ensemble",
+    "dspy.Evaluate",
+    "dspy.evaluate.SemanticF1",
+    "dspy.evaluate.answer_exact_match",
+    "dspy.Prediction",
+    "dspy.Example",
+    "dspy.Image",
+    "dspy.Audio",
+    "dspy.History",
+    "dspy.Tool",
+    "dspy.streamify",
+    "dspy.asyncify",
+    "dspy.track_usage",
+    "dspy.load",
+    "dspy.ColBERTv2"
+  ]
+}
